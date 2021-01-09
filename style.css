@@ -56,3 +56,19 @@ header {
     padding: 10px;
     opacity: 50%;
 }
+
+.projects-images {
+    width: 100%;
+}
+.projetos {
+    padding: 10px;
+    background-color: rgb(10, 47, 61);
+    color: white;
+}
+.projetos div {
+    padding: 10px;
+    opacity: 90%;
+    background-color: rgb(5, 12, 34);
+    margin: 20px 0;
+    border: solid 1px white;
+}
