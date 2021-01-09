@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+}
+
+header {
+    background-image: url(image/videoblocks-software-programmer-code-move-in-frotn-of-the-camdera-under-grid-software-development-concept_bood3_f3l_thumbnail-1080_10.png);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vmax;
+}
+.button-header-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: black;
+    opacity: 70%;
+}
+
+.button-header-container p {
+    text-align: center;
+    
+}
+.title h1{
+    margin: 30px 0;
+    text-align: center;
+}
+.title h2 {
+    font-size: 15px;
+    text-align: center;
+    margin: 10px 0 20px 0;
+}
