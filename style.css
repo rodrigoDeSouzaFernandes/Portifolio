@@ -72,3 +72,32 @@ header {
     margin: 20px 0;
     border: solid 1px white;
 }
+.wpp-logo {
+    width: 20%;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+.whatsapp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+}
+.redes-sociais {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    background-color: white;
+}
+.redes-sociais img {
+    width: 15%;
+}
+hr {
+    width: 70%;
+}
