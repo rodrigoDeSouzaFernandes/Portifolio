@@ -31,3 +31,28 @@ header {
     text-align: center;
     margin: 10px 0 20px 0;
 }
+
+.photo-of-me img {
+    border-radius: 100%;
+    width: 200px;
+}
+.photo-of-me {
+    margin: 10px;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: rgb(23, 88, 88);
+    color: white;
+    height: 100vmax;
+}
+
+.text {
+    background-color: rgb(12, 43, 43);
+    padding: 10px;
+    opacity: 50%;
+}
