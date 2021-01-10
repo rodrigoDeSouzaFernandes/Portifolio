@@ -3,7 +3,7 @@
     <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Portifólio - Rodrigo de Souza</title>
     <link rel="stylesheet" href="style.css">
     </head>
     <body>
@@ -13,17 +13,17 @@
                 <h2>Estudante de desenvolvimento web</h2>
             </div>
             <div class="button-header-container">
-                <p>Sobre mim</p>
-                <p>Projetos</p>
-                <p>Contato</p>
+                <p id="about-me">Sobre mim</p>
+                <p id="projetos">Projetos</p>
+                <p id="contato">Contato</p>
             </div>
         </header>
         <main class="about-me">
             <div class="photo-of-me">
-                <img src="image/rodrigo.jpeg" alt="Rodrigo de Souza Fernandes">
+                <img id="about-me-here" src="image/rodrigo.jpeg" alt="Rodrigo de Souza Fernandes">
             </div>
             <div class="text">
-                <h2>Sobre mim</h2>
+                <h2 >Sobre mim</h2>
                 <p>Estudante de desenvolvimento de softwares e futuro dev, caí de paraquedas no meio da tecnologia
                     e acabei descobrindo uma enorme paixão por essa área.
                 </p>
@@ -40,7 +40,7 @@
             </div>
         </main>
         <section class="projetos">
-            <h3>Alguns projetos desenvolvidos ao longo do curso...</h3>
+            <h3 id="projetos-here">Alguns projetos desenvolvidos ao longo do curso...</h3>
             <div class="pixels-art">
                 <h2>Pixels art</h2>
                 <p>Desenvolver um quadro de pixels, e dar funcionalidades a ele usando javascript</p>
@@ -56,24 +56,25 @@
                 <p>Desenvolver uma lista de tarefas básica, para praticar interações com o DOM</p>
                 <img class="projects-images" src="image/todolist.jpeg" alt="Projeto Lista de tarefas">
             </div>
-            <div>
+            <div class="meme-generator">
                 <h2>Meme generator</h2>
                 <p>Desenvolver um gerador de memes</p>
                 <img class="projects-images" src="image/MEME-GENERATOR.jpeg" alt="ptojeto Gerador de memes">
             </div>
         </section>
         <footer>
-            <h2>Entre em contato:</h2><hr>
+            <h2 id="contato-here" >Entre em contato:</h2><hr>
             <div class="whatsapp">
                 <img class='wpp-logo' src="image/WhatsApp-Logo.png" alt="whatsapp">
                 <h2>(31) 9 8769-6267</h2>
             </div>
             <hr>
             <div class="redes-sociais">
-                <img src="image/linkedin.png" alt="linkedin">
-                <img src="image/instagram.webp" alt="instagram">
-                <img src="image/github.png" alt="github">
+                <img id="linkedin" src="image/linkedin.png" alt="linkedin">
+                <img id="instagram" src="image/instagram.webp" alt="instagram">
+                <img id="github" src="image/github.png" alt="github">
             </div>
         </footer>
+        <script src="script.js"></script>
     </body>
 </html>
