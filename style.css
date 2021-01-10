@@ -100,3 +100,93 @@ footer {
 hr {
     width: 70%;
 }
+
+@media (min-width: 800px ) {
+    header {
+        height: 100vmin;
+        font-size: 20px;
+        align-items: center;
+        background-image: url(image/codding.jpg);
+        background-size: cover;
+        text-shadow: black 5px 5px 5px;
+    }
+    .title {
+        border: white 1px solid;
+        width: fit-content;
+        padding: 30px;
+        margin: 30px;
+    }
+    .button-header-container {
+        flex-direction: row;
+        justify-content: center;
+        width: 100vmax;
+    }
+    .button-header-container p {
+        text-align: center;
+        padding: 10px 20px;
+        border-radius: 10px;
+        margin: 20px;
+    }
+    .button-header-container p:hover {
+        background-color: white;
+        color: black;
+        transition: 0.5s;
+    }
+    .about-me {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .about-me img {
+        width: 20vmax;
+    }
+    .text {
+        width: 40vmax;
+        margin: 30px 0;
+        padding: 20px;
+    }
+    .projects-images {
+        width: 100%;
+    }
+    .shopping-cart, .meme-generator, .project-todolist, .pixels-art {
+        width: 40vmax;
+    }
+    .projetos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .projetos h3 {
+        width: 100vmax;
+        margin:10px
+    }
+    .redes-sociais img {
+        width: 50px;
+        margin: 10px;
+    }
+    .redes-sociais {
+        border-radius: 100%;
+    }
+    footer {
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    footer h2 {
+        width: 100vmax;
+        text-align: center;
+    }
+    footer hr {
+        width: 100vmax;
+    }
+    .whatsapp {
+        width: fit-content;
+    }
+    .hr {
+        display: none;
+    }
+    .whatsapp img {
+        width: 100px;
+    }
+    .whatsapp h2 {
+        width: fit-content;
+    }
+}
