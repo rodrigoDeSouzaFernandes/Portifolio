@@ -1,195 +1,103 @@
-body {
-    margin: 0;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
 }
 
-header {
-    background-image: url(image/videoblocks-software-programmer-code-move-in-frotn-of-the-camdera-under-grid-software-development-concept_bood3_f3l_thumbnail-1080_10.png);
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100vmax;
-}
-header p {
-    text-align: center;
-}
-.button-header-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    background-color: black;
-    opacity: 70%;
+.max-width{
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto
 }
 
-.button-header-container p {
-    text-align: center;
-    
-}
-.title h1{
-    margin: 30px 0;
-    text-align: center;
+.navbar .max-width {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.photo-of-me img {
-    border-radius: 100%;
-    width: 200px;
-}
-.photo-of-me {
-    margin: 10px;
-}
-
-.about-me {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    background-color: rgb(23, 88, 88);
-    color: white;
+.navbar {
+  position: fixed;
+  width: 100%;
+  padding: 30px 0;
+  font-family: 'Ubuntu', sans-serif;
+  transition: all 0.3s ease;
 }
 
-.text {
-    background-color: rgb(12, 43, 43);
-    padding: 10px;
-    opacity: 50%;
+.navbar.sticky {
+  padding: 15px 0;
+  background: crimson;
 }
 
-.projects-images {
-    width: 100%;
-}
-.projetos {
-    padding: 10px;
-    background-color: rgb(10, 47, 61);
-    color: white;
-}
-.projetos div {
-    padding: 10px;
-    opacity: 90%;
-    background-color: rgb(5, 12, 34);
-    margin: 20px 0;
-    border: solid 1px white;
-}
-.wpp-logo {
-    width: 20%;
+.navbar .logo a {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
 }
 
-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: black;
-    color: white;
-}
-.whatsapp {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-right: 20px;
-}
-.redes-sociais {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 20px;
-    background-color: white;
-}
-.redes-sociais img {
-    width: 15%;
-}
-hr {
-    width: 70%;
+.navbar .logo a span {
+  color: crimson;
 }
 
-@media (min-width: 800px ) {
-    header {
-        height: 100vmin;
-        font-size: 20px;
-        align-items: center;
-        background-image: url(image/codding.jpg);
-        background-size: cover;
-        text-shadow: black 5px 5px 5px;
-    }
-    header p {
-        font-size: 40px;
-        font-family: 'Sacramento', cursive, sans-serif;
-    }
+.navbar.sticky .logo a span {
+  color: #fff;
+}
 
-    .title {
-        border: white 1px solid;
-        width: fit-content;
-        padding: 30px;
-        margin: 30px;
-    }
-    .button-header-container {
-        flex-direction: row;
-        justify-content: center;
-        width: 100vmax;
-    }
-    .button-header-container p {
-        text-align: center;
-        padding: 10px 20px;
-        border-radius: 10px;
-        margin: 20px;
-    }
-    .button-header-container p:hover {
-        background-color: white;
-        color: black;
-        transition: 0.5s;
-    }
-    .about-me {
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-    .about-me img {
-        width: 20vmax;
-    }
-    .text {
-        width: 40vmax;
-        margin: 30px 0;
-        padding: 20px;
-    }
-    .projects-images {
-        width: 100%;
-    }
-    .shopping-cart, .meme-generator, .project-todolist, .pixels-art {
-        width: 40vmax;
-    }
-    .projetos {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-    }
-    .projetos h3 {
-        width: 100vmax;
-        margin:10px
-    }
-    .redes-sociais img {
-        width: 50px;
-        margin: 10px;
-    }
-    .redes-sociais {
-        border-radius: 100%;
-    }
-    footer {
-        flex-flow: row wrap;
-        justify-content: center;
-    }
-    footer h2 {
-        width: 100vmax;
-        text-align: center;
-    }
-    footer hr {
-        width: 100vmax;
-    }
-    .whatsapp {
-        width: fit-content;
-    }
-    .hr {
-        display: none;
-    }
-    .whatsapp img {
-        width: 100px;
-    }
-    .whatsapp h2 {
-        width: fit-content;
-    }
+.navbar .menu li {
+  list-style: none;
+  display: inline-block;
+}
+
+.navbar .menu li a {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+  transition: color 0.3s ease;
+}
+
+.navbar .menu li a:hover {
+  color: crimson;
+}
+
+.navbar.sticky .menu li a:hover {
+  color: #fff;
+}
+
+/* home section stiling */
+.home{
+  display: flex;
+  background: url('./image/testehome.jpg') no-repeat center;
+  height: 100vh;
+  color: #fff;
+  min-height: 500px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.home .max-width {
+  margin: auto 0 auto 40px;
+}
+
+.home .home-content .text-1 {
+  font-size: 27px;
+}
+
+.home .home-content .text-2 {
+  font-size: 75px;
+  font-weight: 600;
+  margin-left: -3px;
+}
+
+.home .home-content .text-3 {
+  font-size: 40px;
+  margin: 5px 0 ;
+}
+
+.home .home-content .text-3 span {
+  color: crimson;
+  font-weight: 500;
+  
 }
