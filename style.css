@@ -306,7 +306,7 @@ section .title::after{
 /* skills section styling */
 
 .skills .title::after{
-    content: "what i know";
+    content: "O que eu sei";
 }
 .skills .skills-content .column{
     width: calc(50% - 30px);
@@ -380,7 +380,7 @@ section .title::after{
 
 /* teams section styling */
 .teams .title::after{
-    content: "who with me";
+    content: "";
 }
 .teams .carousel .card{
     background: #222;
@@ -399,12 +399,14 @@ section .title::after{
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
+    color: white;
+    font-size: 14px;
 }
 .teams .carousel .card:hover .box{
     transform: scale(1.05);
 }
 .teams .carousel .card .text{
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
@@ -443,10 +445,13 @@ section .title::after{
 
 /* contact section styling */
 .contact .title::after{
-    content: "get in touch";
+    content: "";
 }
 .contact .contact-content .column{
-    width: calc(50% - 30px);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
 }
 .contact .contact-content .text{
     font-size: 20px;
@@ -463,6 +468,7 @@ section .title::after{
     display: flex;
     height: 65px;
     align-items: center;
+    justify-content: center;
 }
 .contact .contact-content .row .info{
     margin-left: 30px;
@@ -536,6 +542,16 @@ section .title::after{
   color: crimson;
   background: none;
 }
+
+.contact .right .link {
+    width: 50px;
+    height: 50px;
+    font-size: 50px;
+    margin: 0 20px 0 0;
+    color: crimson;
+
+}
+
 /* footer section styling */
 footer{
     background: #111;
@@ -667,7 +683,7 @@ footer span a:hover{
         margin: 0;
     }
     .right form .error-box{
-       width: 150px;
+        width: 150px;
     }
     .scroll-up-btn{
         right: 15px;
